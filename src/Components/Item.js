@@ -1,11 +1,10 @@
 import React, { Component} from 'react';
-// import { Button } from 'semantic-ui-react';
+import { Button } from 'semantic-ui-react';
 
 const Item = ({ id, name, price}) => (
   <div key={id}>
-    <h3>{name}</h3>
-    <h3>{price}</h3>
-    {/* <button color='olive'>Delete</button>  */}
+    <h3>{name} -- {price}</h3>
+    {/* <Button color='red'>Delete</Button>  */}
   </div>
 )
 
