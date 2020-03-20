@@ -19,31 +19,26 @@ class ItemForm extends Component {
     const { name, price } = this.state
     return(
      <Form onSubmit={this.handleSubmit}>
-       <Form.Input
-       label='Item name'
-       required
+        <Form.Input
+        label='Item name'
+        required
 
-       name='name'
-       value={name}
-       onChange={this.handleChange}
-      />
+        name='name'
+        value={name}
+        onChange={this.handleChange}
+        />
 
-       <Form.Input
-       label='Item price'
-       required
+        <Form.Input
+        label='Item price ($)'
+        required
 
-       name='price'
-       value={price}
-       onChange={this.handleChange}
-      />
-
-  <Form.Button>Submit</Form.Button>
-
+        name='price'
+        value={price}
+        onChange={this.handleChange}
+        />
+      <Form.Button>Submit</Form.Button>
      </Form>
     )
   }
-
-
-
 }
 export default ItemForm;
